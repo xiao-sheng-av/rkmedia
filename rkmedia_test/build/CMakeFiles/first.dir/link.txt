@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/first.dir/vi_get_frame_test.cpp.o  -o first  -L/rkmedia/rkmedia/rkmedia_test/lib -Wl,-rpath,/rkmedia/rkmedia/rkmedia_test/lib -leasymedia 
