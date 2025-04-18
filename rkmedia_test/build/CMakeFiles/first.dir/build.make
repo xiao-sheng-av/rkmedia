@@ -60,15 +60,15 @@ include CMakeFiles/first.dir/flags.make
 CMakeFiles/first.dir/vi_get_frame_test.cpp.o: CMakeFiles/first.dir/flags.make
 CMakeFiles/first.dir/vi_get_frame_test.cpp.o: ../vi_get_frame_test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/rkmedia/rkmedia/rkmedia_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/first.dir/vi_get_frame_test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/first.dir/vi_get_frame_test.cpp.o -c /rkmedia/rkmedia/rkmedia_test/vi_get_frame_test.cpp
+	/opt/rv1126_rv1109_linux/prebuilts/gcc/linux-x86/arm/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin/arm-rockchip830-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/first.dir/vi_get_frame_test.cpp.o -c /rkmedia/rkmedia/rkmedia_test/vi_get_frame_test.cpp
 
 CMakeFiles/first.dir/vi_get_frame_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/first.dir/vi_get_frame_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /rkmedia/rkmedia/rkmedia_test/vi_get_frame_test.cpp > CMakeFiles/first.dir/vi_get_frame_test.cpp.i
+	/opt/rv1126_rv1109_linux/prebuilts/gcc/linux-x86/arm/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin/arm-rockchip830-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /rkmedia/rkmedia/rkmedia_test/vi_get_frame_test.cpp > CMakeFiles/first.dir/vi_get_frame_test.cpp.i
 
 CMakeFiles/first.dir/vi_get_frame_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/first.dir/vi_get_frame_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /rkmedia/rkmedia/rkmedia_test/vi_get_frame_test.cpp -o CMakeFiles/first.dir/vi_get_frame_test.cpp.s
+	/opt/rv1126_rv1109_linux/prebuilts/gcc/linux-x86/arm/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin/arm-rockchip830-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /rkmedia/rkmedia/rkmedia_test/vi_get_frame_test.cpp -o CMakeFiles/first.dir/vi_get_frame_test.cpp.s
 
 CMakeFiles/first.dir/vi_get_frame_test.cpp.o.requires:
 
@@ -90,6 +90,26 @@ first_EXTERNAL_OBJECTS =
 
 first: CMakeFiles/first.dir/vi_get_frame_test.cpp.o
 first: CMakeFiles/first.dir/build.make
+first: ../lib/libeasymedia.so
+first: ../lib/libdrm.so
+first: ../lib/libasound.so
+first: ../lib/libBasicUsageEnvironment.so
+first: ../lib/libUsageEnvironment.so
+first: ../lib/libv4l2.so
+first: ../lib/librga.so
+first: ../lib/librknn_api.so
+first: ../lib/librockface.so
+first: ../lib/libmd_share.so
+first: ../lib/libod_share.so
+first: ../lib/librockchip_mpp.so.1
+first: ../lib/libliveMedia.so.61
+first: ../lib/libgroupsock.so.8
+first: ../lib/libRKAP_3A.so
+first: ../lib/libRKAP_ANR.so
+first: ../lib/libsqlite3.so.0
+first: ../lib/libRKAP_Common.so
+first: ../lib/librkaiq.so
+first: ../lib/libv4lconvert.so.0
 first: CMakeFiles/first.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/rkmedia/rkmedia/rkmedia_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable first"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/first.dir/link.txt --verbose=$(VERBOSE)

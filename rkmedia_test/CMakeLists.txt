@@ -6,9 +6,11 @@ project(test VERSION 0.0.1 LANGUAGES CXX)
 
 #支持的c++版本
 set(CMAKE_CXX_STANDARD 11)   
-
 #强制要求编译器使用该标准，如果编译器不支持 C++11，会导致构建失败
 set(CMAKE_CXX_STANDARD_REQUIRED True) 
+
+
+set(CMAKE_CXX_COMPILER "/opt/rv1126_rv1109_linux/prebuilts/gcc/linux-x86/arm/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin/arm-rockchip830-linux-gnueabihf-g++")
 
 #PROJECT_SOURCE_DIR为CMakeList.txt的目录
 include_directories(${PROJECT_SOURCE_DIR}/include/rkmedia)
@@ -17,6 +19,28 @@ include_directories(${PROJECT_SOURCE_DIR}/include/easymedia)
 link_directories(${CMAKE_SOURCE_DIR}/lib)
 
 #指定要生成的可执行文件和其源文件
-add_executable(first vi_get_frame_test.cpp )
+add_executable(vi_get_frame_test vi_get_frame_test.cpp )
+add_executable(vi_venc_h264 vi_venc_h264.cpp )
 
-target_link_libraries(first easymedia)  # 这里确保是实际的 Rockchip 库名称
+target_link_libraries(first
+${PROJECT_SOURCE_DIR}/lib/libeasymedia.so
+${PROJECT_SOURCE_DIR}/lib/libdrm.so
+${PROJECT_SOURCE_DIR}/lib/libasound.so
+${PROJECT_SOURCE_DIR}/lib/libBasicUsageEnvironment.so
+${PROJECT_SOURCE_DIR}/lib/libUsageEnvironment.so
+${PROJECT_SOURCE_DIR}/lib/libv4l2.so
+${PROJECT_SOURCE_DIR}/lib/librga.so
+${PROJECT_SOURCE_DIR}/lib/librknn_api.so
+${PROJECT_SOURCE_DIR}/lib/librockface.so
+${PROJECT_SOURCE_DIR}/lib/libmd_share.so
+${PROJECT_SOURCE_DIR}/lib/libod_share.so
+${PROJECT_SOURCE_DIR}/lib/librockchip_mpp.so.1
+${PROJECT_SOURCE_DIR}/lib/libliveMedia.so.61
+${PROJECT_SOURCE_DIR}/lib/libgroupsock.so.8
+${PROJECT_SOURCE_DIR}/lib/libRKAP_3A.so
+${PROJECT_SOURCE_DIR}/lib/libRKAP_ANR.so
+${PROJECT_SOURCE_DIR}/lib/libsqlite3.so.0
+${PROJECT_SOURCE_DIR}/lib/libRKAP_Common.so
+${PROJECT_SOURCE_DIR}/lib/librkaiq.so
+${PROJECT_SOURCE_DIR}/lib/libv4lconvert.so.0
+)

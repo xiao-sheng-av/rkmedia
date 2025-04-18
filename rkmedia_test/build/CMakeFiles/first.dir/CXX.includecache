@@ -109,6 +109,8 @@ rkmedia_common.h
 /rkmedia/rkmedia/rkmedia_test/vi_get_frame_test.cpp
 cstdio
 -
+cstring
+-
 rkmedia_api.h
 -
 
