@@ -1,3 +1,0 @@
-/rkmedia/rkmedia/rkmedia_test/build/CMakeFiles/rebuild_cache.dir
-/rkmedia/rkmedia/rkmedia_test/build/CMakeFiles/first.dir
-/rkmedia/rkmedia/rkmedia_test/build/CMakeFiles/edit_cache.dir
